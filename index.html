@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="numberRandom">
+      <div class="container">
+        <div class="numberRandom-wrapper">
+          <div class="numberRandom-tool">
+            <div class="numberRandom-tool__header">
+              <h3>Tạo số ngẫu nhiên</h3>
+            </div>
+            <div class="numberRandom-tool__result">
+              <div
+                class="numberRandom-tool__result-loader"
+                style="display: none"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img
+                class="numberRandom-tool__result-cube"
+                src="./images/cube.svg"
+                alt="this-is-image"
+              />
+              <img
+                class="numberRandom-tool__result-dizzy"
+                style="display: none"
+                src="./images/dizzy.svg"
+                alt="this-is-image"
+              />
+              <div
+                style="display: none"
+                class="numberRandom-tool__result-number"
+              ></div>
+            </div>
+            <div class="numberRandom-tool__group">
+              <div class="numberRandom-tool__group-wrapper">
+                <label for="min">Min:</label>
+                <input value="1" type="number" id="min" />
+              </div>
+              <div class="numberRandom-tool__group-wrapper">
+                <label for="max">Max:</label>
+                <input value="10" type="number" id="max" />
+              </div>
+            </div>
+            <div class="numberRandom-tool__control">
+              <div
+                id="mutedIcon"
+                title="Mute"
+                class="numberRandom-tool__control-icon"
+              >
+                <ion-icon name="volume-high-outline"></ion-icon>
+              </div>
+              <div
+                id="fullscreenIcon"
+                title="Full screen"
+                class="numberRandom-tool__control-icon"
+              >
+                <ion-icon name="copy-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="numberRandom-tool__footer">
+              <button id="instantly">
+                <ion-icon name="reload-outline"></ion-icon>
+                <span>Generate Instantly</span>
+              </button>
+              <button id="start-stop">
+                <ion-icon name="alarm-outline"></ion-icon>
+                <span>Start Generating</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
